@@ -1,0 +1,67 @@
+.footer-page {
+	min-width: 305px;
+	margin-top: 30px;
+	background: $background-dark;
+}
+.footer-page__copyright {
+	max-width: 350px;
+	padding-top: 10px;
+	color: $color-white; 
+}
+.footer-page__copyright a{
+	color: $color-white; 
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:active {
+		opacity: 0.5
+	}
+}
+.footer-page__list {
+	margin: 0;
+	padding: 10px;
+	max-width: 250px;
+	list-style: none;
+}
+.footer-page__list a {
+	color: $color-white;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		opacity: 0.5
+	} 
+}
+.footer-page__container-logo {
+	display: flex;
+	padding-top: 10px;
+	max-width: 350px;
+}
+.footer-page__logo {
+	width: 100px;
+	height: 100px;
+	background: $color-white;
+}
+.footer-page__logo-info {
+	margin-left: 15px;
+}
+.footer-page__logo-info h1{
+	@include heder-title;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	color: $color-white;	
+}
+.footer-page__logo-info span {
+	@include heder-title;
+	font-size: 16px;
+	line-height: 20px;
+	color: $color-white;
+}
+@media (min-width: 768px) {
+	.footer-page {
+		margin-top: 90px;
+		padding: 50px 0;
+	}
+}

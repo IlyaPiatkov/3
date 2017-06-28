@@ -1,0 +1,40 @@
+.content__wrapper {
+	@include container;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.content__column-left {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	padding: 0 3%;
+	max-width: 292px;
+	background-image: $bg-content-column-left;
+	color: $color-white;
+}
+.content__column-left h2{
+	margin: 20px 0 10px;
+	font-size: 40px;
+	font-weight: normal;
+}
+.content__column-left span {
+	display: block;
+	font-style: italic;
+}
+.content__column-left a {
+	margin-left: auto;
+	padding-top: 30px;
+	margin-bottom: 70px;
+	color: $color-white;
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		opacity: 0.5;
+	}
+}
+.content__column-right {
+	max-width: 570px;
+	margin-left: 6%;
+}

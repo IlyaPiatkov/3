@@ -1,0 +1,15 @@
+@mixin container {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+@mixin heder-title {
+	font-size: 30px;
+	line-height: 30px;
+	color: #767676;
+} 
+@mixin heder-title-phone {
+	font-size: 35px;
+	line-height: 45px;
+	color: #767676;
+}

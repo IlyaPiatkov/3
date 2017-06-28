@@ -1,0 +1,151 @@
+.header-page {
+	min-height: 230px;
+	min-width: 305px;
+	background: $background;
+}
+.header-page__container-logo {
+	display: flex;
+	flex-direction: row;
+	margin-top: 65px;
+}
+.header-page__logo {
+	width: 100px;
+	height: 100px;
+	background: $background-dark;
+}
+.header-page__logo-info {
+	margin-left: 15px;
+}
+.header-page__logo-info h1{
+	@include heder-title;
+	margin: 0 0 10px 0;
+	font-weight: bold;	
+}
+.header-page__logo-info span {
+	@include heder-title;
+	font-size: 16px;
+	line-height: 20px;
+}
+.header-page__container-phone {
+	@include heder-title-phone;
+	display: flex;
+	flex-direction: column;
+	margin: 40px 0;
+}
+.header-page__container-phone .header-page__feedback{
+	align-self: flex-start;
+	margin-left: 100px;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #767676;
+	border-bottom: 2px dotted #767676;
+	&:hover {
+		text-decoration: none;
+		border-bottom: none;
+	}
+}
+.header-page__container-phone a:focus {
+	outline: none;
+	text-decoration: none;
+}
+.modal-body {
+	padding-bottom: 30px;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.modal-title {
+	margin-top: 30px;
+	line-height: 22px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: 545454;
+}
+.modal-content {
+	border-radius: 0;
+	box-shadow: none;
+}
+.form-group label {
+	width: 100%;
+	line-height: 14px;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+}
+.form-control {
+	border-radius: 2px;
+}
+textarea.form-control {
+	padding: 9px 12px;
+}
+.form-btn__wrapper {
+		display: flex;
+		justify-content: center;
+}
+.btn-style {
+	margin-top: 5px;
+	padding: 9px 15px;
+	border-radius: 0;
+	text-transform: uppercase;
+	background: #777777;
+	color: #ffffff;
+}
+@media (min-width: 768px) {
+	.header-page__container-logo {
+		margin-bottom: 65px;
+	}
+	.header-page__container-phone {
+		align-items: flex-end;
+		& .header-page__feedback {
+			align-self: flex-end;
+		}
+	}
+	.close-style {	
+		position: absolute;
+		right: -30px;
+		top: -29px;
+		opacity: 1;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.close-style .close-style--decoration {
+		display: block;
+		width: 30px;
+		height: 30px;
+		font-size: 0;
+		background: #767676;
+		&::before, 
+		&::after {
+			content: "";
+			position: absolute;
+			top: 6px;
+			width: 1px;
+			height: 18px;
+			background: #ffffff;
+		}
+		&::before {
+			transform: rotate(45deg);
+		}
+		&::after {
+			transform: rotate(-45deg);
+		}
+	}
+	.modal-content {
+		width: 466px;
+	}
+	.modal-dialog {
+		margin: 280px auto;
+		width: 466px;
+	}
+	.form-group input,
+	.form-group textarea {
+		width: 340px;
+		margin: 0 auto;
+	}
+}
