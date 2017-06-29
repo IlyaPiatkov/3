@@ -1,4 +1,11 @@
+.breadcrumb {
+	margin-bottom: 0px;
+	padding: 5px 0;
+	background: #ffffff;
+}
 .breadcrumb a {
-	color: #878787;
+	font-family: $ff-title;
+	color: $color-header;
 	text-decoration: underline;
+	letter-spacing: -0.5px;
 }

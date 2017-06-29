@@ -4,12 +4,27 @@
 	padding: 0 10px;
 }
 @mixin heder-title {
+	margin: 8px 0 10px 0;
+	font-weight: bold;	
 	font-size: 30px;
-	line-height: 30px;
-	color: #767676;
+	line-height: 25px;
+	letter-spacing: -0.2px;
+	font-family: $ff-title;
+	color: $color-header;
 } 
-@mixin heder-title-phone {
-	font-size: 35px;
-	line-height: 45px;
-	color: #767676;
+@mixin info-title {
+	display: block;
+	padding-top: 5px;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.15px;
+	font-family: $ff-title;
+	color: $color-header;
+}
+@mixin phone-title {
+	font-family: $ff-phone-title;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -4px;
+	color: $color-header;
 }

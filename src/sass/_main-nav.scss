@@ -10,6 +10,7 @@
 	.navbar .main-nav__list li a {
 		display: block;
 		padding: 15px 25px;
+		font-family: $ff-title;
 		font-weight: normal;
 		font-size: 24px;
 		line-height: 28px;
@@ -26,13 +27,20 @@
 .navbar-default .navbar-nav>li>a:hover {
 	color: $color-white;
 }
+@media (max-width: 989px) {
+	.main-nav__list {
+		justify-content: center;
+	}
+}
 @media (min-width: 768px) {
+	.navbar-collapse {
+		padding: 0;
+	}
 	.main-nav__list {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
 		list-style: none;
 	}
 	.main-nav__list li {
@@ -51,9 +59,12 @@
 	}
 	.navbar .main-nav__list li a {
 		display: block;
-		padding: 25px;
-		font-size: 24px;
-		line-height: 28px;
+		padding: 21px 25px;
+		font-family: $ff-title;
+		font-weight: lighter;
+		font-size: 28px;
+		line-height: 35px;
+
 		text-decoration: none;
 		color: $color-white;
 		&:hover {
@@ -63,4 +74,20 @@
 			opacity: 0.5;
 		}
 	}
+		/*костилi*/
+		.main-nav__list li:nth-of-type(1) a {
+			padding: 21px 20px 23px 35px;
+			letter-spacing: -0.2px;
+		}
+		.main-nav__list li:nth-of-type(2) a {
+			padding: 21px 23px 23px 25px;
+		}
+		.main-nav__list li:nth-of-type(3) a {
+			padding: 21px 23px 23px 23px;
+			letter-spacing: 0.5px;
+		}
+		.main-nav__list li:nth-of-type(4) a {
+			padding: 21px 23px 23px 15px;
+		}
+
 }
