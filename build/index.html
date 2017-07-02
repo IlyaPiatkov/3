@@ -327,11 +327,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-        
-            
-            
+        </div>    
       </div>
     </footer>
     <!-- Modal -->
@@ -343,7 +339,7 @@
             <h4 class="modal-title" id="myModalLabel">Обратная связь</h4>
           </div>
           <div class="modal-body">
-            <form role="form" id="application" action=" application.php" method="POST" name=" application ">
+            <form role="form" id="application" action="#" name=" application " novalidate>
               <div class="form-group">
                 <label for="exampleInputname1">Ваше имя*</label>
                 <input type="text" class="form-control" id="exampleInputname1" name="name" placeholder="" required>
@@ -361,7 +357,7 @@
                 <textarea class="form-control" id="exampleInputmessenger1" name="messenger" rows="6" required></textarea>
               </div>
               <div class="form-btn__wrapper">
-                <button type="submit" class="btn btn-default btn-style" form="application">ОТПРАВИТЬ</button>
+                <button id="formSubmit" type="submit" class="btn btn-default btn-style">ОТПРАВИТЬ</button>
               </div>              
             </form>
           </div>
@@ -372,80 +368,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Підключення мінімізованої збірки всіх плагінів jQuery. Можна підключати додаткові плагіни, якщо потрібно -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function(){
-      
-        $('#btn1').click(function(){
-          $.ajax({
-            url: "page/page1.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-        
-        $('#btn2').click(function(){
-          $.ajax({
-            url: "page/page2.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-
-        $('#btn3').click(function(){
-          $.ajax({
-            url: "page/page3.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-
-        $('#btn4').click(function(){
-          $.ajax({
-            url: "page/page4.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-
-        $('#btn5').click(function(){
-          $.ajax({
-            url: "page/page5.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-
-        $('#btn6').click(function(){
-          $.ajax({
-            url: "page/page6.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-
-        $('#btn7').click(function(){
-          $.ajax({
-            url: "page/page7.html",
-            cache: false,
-            success: function(html){
-              $("#content").html(html);
-            }
-          });
-        });
-        
-      });
-  </script>
+    <script src="js/javascript.mini.js"></script>
   </body>
 </html>

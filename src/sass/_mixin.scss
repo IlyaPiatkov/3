@@ -28,3 +28,25 @@
 	letter-spacing: -4px;
 	color: $color-header;
 }
+@mixin placeholder {
+  &::-webkit-input-placeholder { 
+  	color: $color-placeholder; 
+  	font-style: italic;
+  	letter-spacing: -0.77px;
+  }
+  &:-moz-placeholder { 
+  	color: $color-placeholder; 
+  	font-style: italic;
+  	letter-spacing: -0.77px;
+  }
+  &::-moz-placeholder { 
+  	color: $color-placeholder; 
+  	font-style: italic;
+  	letter-spacing: -0.77px;
+  }
+  &:-ms-input-placeholder { 
+  	color: $color-placeholder; 
+  	font-style: italic;
+  	letter-spacing: -0.77px;
+  }  
+}

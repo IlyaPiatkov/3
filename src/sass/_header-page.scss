@@ -64,7 +64,7 @@
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	color: 545454;
+	color: #545454;
 }
 .modal-content {
 	border-radius: 0;
@@ -79,6 +79,7 @@
 	text-align: center;
 }
 .form-control {
+	@include placeholder;
 	height: 42px;
 	border-radius: 2px;
 }
@@ -98,7 +99,8 @@ textarea.form-control {
 	background: #777777;
 	color: #ffffff;
 }
-@media (min-width: 768px) {
+
+@media (min-width: 992px) {
 	.header-page__container-logo {
 		margin-bottom: 65px;
 	}
