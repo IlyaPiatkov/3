@@ -4,8 +4,12 @@
 	background: $background-dark;
 }
 .footer-page__copyright {
-	max-width: 350px;
-	padding-top: 10px;
+	flex-basis: 350px;
+	padding-top: 5px;
+	font-family: $ff-title;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -0.01px;
 	color: $color-white; 
 }
 .footer-page__copyright a{
@@ -20,13 +24,14 @@
 }
 .footer-page__list {
 	margin: 0;
-	padding: 10px;
-	max-width: 250px;
+	padding: 2px 0 0 0;
 	list-style: none;
 }
 .footer-page__list a {
+	font-family: $ff-title;
+	font-size: 14px;
+	line-height: 26px;
 	color: $color-white;
-	text-decoration: underline;
 	&:hover {
 		text-decoration: none;
 	}
@@ -36,32 +41,38 @@
 }
 .footer-page__container-logo {
 	display: flex;
+	margin-left: auto;
 	padding-top: 10px;
-	max-width: 350px;
+	flex-basis: 275px;
 }
 .footer-page__logo {
-	width: 100px;
-	height: 100px;
+	min-width: 100px;
+	min-height: 100px;
 	background: $color-white;
 }
 .footer-page__logo-info {
-	margin-left: 15px;
+	margin-left: 12px;
 }
 .footer-page__logo-info h1{
 	@include heder-title;
-	margin: 0 0 10px 0;
-	font-weight: bold;
 	color: $color-white;	
 }
 .footer-page__logo-info span {
-	@include heder-title;
-	font-size: 16px;
-	line-height: 20px;
+	@include info-title;
 	color: $color-white;
 }
-@media (min-width: 768px) {
+@media (min-width: 922px) {
 	.footer-page {
-		margin-top: 90px;
-		padding: 50px 0;
+		margin-top: 70px;
+		padding: 40px 0;
+	}
+	.footer-page__copyright {
+		margin-left: 16px;
+	}
+	.footer-page__list {
+		margin-left: 28px;
+	}
+	.footer-page__container-logo {
+		margin-left: 50px;
 	}
 }
